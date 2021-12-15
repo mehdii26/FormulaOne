@@ -5,10 +5,13 @@
     Afin de connaitre qui est le champion
 
     Scenario Outline: Verstappen est champion
-      Given les pilotes <pliote1> qui a <points1> et <pilote2> qui a <points2>
-      When <points1> superieur à <points2>
-      Then le <isChampion> est true
+      Given l'equipe dont les pilotes sont
+      And le pilote <pilote1> qui a <points1>
+      And le pilote <pilote2> qui a <points2>
+      When le Race Director calcule les points
+      Then le <total> doit etre calculé automatiquement
 
       Examples:
-      | pilote1      | points1 | pilote2    | points2 | isChampion |
-      | "Verstappen" | 395     | "Hamilton" | 387     | true       |
+      | pilote1      | points1 | pilote2  | points2 | total |
+      | "Verstappen" | 395     | "Checo"  | 190     | 585   |
+      | "Hamilton"   | 387     | "Bottas" | 226     | 613   |
