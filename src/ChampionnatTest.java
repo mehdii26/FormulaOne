@@ -105,7 +105,7 @@ public class ChampionnatTest {
         McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());
 
         //Course
-        AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo,Checo);
+        AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo, Checo);
 
         //Points après la course
         AbuDhabiGP.Classement(SuperMax);
@@ -116,8 +116,6 @@ public class ChampionnatTest {
         AbuDhabiGP.Classement(Lando);
         AbuDhabiGP.Classement(Sainz);
         AbuDhabiGP.Classement(Ricciardo);
-        
-
     }
 
 
@@ -137,19 +135,27 @@ public class ChampionnatTest {
     public void testWinChampionshipPilote()
     {
         //
-        ArrayList <Integer> Chauffeurs= new ArrayList();
+        ArrayList <Integer> pilotesPoints= new ArrayList();
 
         //Liste points pilotes
-        Chauffeurs.add(SuperMax.getPoints());
-        Chauffeurs.add(Checo.getPoints());
-        Chauffeurs.add(Hamilton.getPoints());
-        Chauffeurs.add(Bottas.getPoints());
-        Chauffeurs.add(Sainz.getPoints());
-        Chauffeurs.add(Leclerc.getPoints());
-        Chauffeurs.add(Ricciardo.getPoints());
-        Chauffeurs.add(Lando.getPoints());
+        pilotesPoints.add(SuperMax.getPoints());
+        pilotesPoints.add(Checo.getPoints());
+        pilotesPoints.add(Hamilton.getPoints());
+        pilotesPoints.add(Bottas.getPoints());
+        pilotesPoints.add(Sainz.getPoints());
+        pilotesPoints.add(Leclerc.getPoints());
+        pilotesPoints.add(Ricciardo.getPoints());
+        pilotesPoints.add(Lando.getPoints());
 
-        assertEquals(true, SuperMax.winChampionshipPilote(Chauffeurs));
+        assertEquals(true, SuperMax.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Checo.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Hamilton.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Bottas.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Sainz.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Leclerc.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Ricciardo.winChampionshipPilote(pilotesPoints));
+        assertEquals(false, Lando.winChampionshipPilote(pilotesPoints));
+
     }
 
     @Test
@@ -161,6 +167,9 @@ public class ChampionnatTest {
         Constructeurs.add(Ricciardo.getPoints() + Lando.getPoints());
 
         assertEquals(true, Mercedes.winChampionshipConstructeur(Constructeurs));
+        assertEquals(false, RedBull.winChampionshipConstructeur(Constructeurs));
+        assertEquals(false, McLaren.winChampionshipConstructeur(Constructeurs));
+        assertEquals(false, Ferrari.winChampionshipConstructeur(Constructeurs));
 
     }
 
