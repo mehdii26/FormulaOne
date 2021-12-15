@@ -9,6 +9,7 @@ public class Course {
     private Pilote sixth;
     private Pilote seventh;
     private Pilote eighth;
+    private int newPoints;
 
     public Pilote getSecond() {
         return second;
@@ -110,16 +111,19 @@ public class Course {
 
 
     public void Classement(Pilote pilote){
-        if (pilote == winner) pilote.setPoints(25);
-        if (pilote == second) pilote.setPoints(18);
-        if (pilote == third) pilote.setPoints(15);
-        if (pilote == fourth) pilote.setPoints(12);
-        if (pilote == fifth) pilote.setPoints(10);
-        if (pilote == sixth) pilote.setPoints(8);
-        if (pilote == seventh) pilote.setPoints(6);
-        if (pilote == eighth) pilote.setPoints(4);
+        int newPoints = 0;
 
+        if (pilote == winner) newPoints = 25;
+        if (pilote == second) newPoints = 18;
+        if (pilote == third) newPoints = 15;
+        if (pilote == fourth) newPoints = 12;
+        if (pilote == fifth) newPoints = 10;
+        if (pilote == sixth) newPoints = 8;
+        if (pilote == seventh) newPoints = 6;
+        if (pilote == eighth) newPoints = 4;
 
+        pilote.setPoints(pilote.getPoints() + newPoints);
+        pilote.getEquipe().setPoints( pilote.getEquipe().getPoints() + newPoints);
     }
 
 }
