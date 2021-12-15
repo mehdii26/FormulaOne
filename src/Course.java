@@ -119,6 +119,7 @@ public class Course {
         if (pilote == seventh) pilote.setPoints(6);
         if (pilote == eighth) pilote.setPoints(4);
 
+
     }
 
 }

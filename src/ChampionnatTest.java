@@ -116,33 +116,7 @@ public class ChampionnatTest {
         AbuDhabiGP.Classement(Lando);
         AbuDhabiGP.Classement(Sainz);
         AbuDhabiGP.Classement(Ricciardo);
-
-
-        RedBull.setPoints(SuperMax.getPoints() + Checo.getPoints());
-        Mercedes.setPoints(Hamilton.getPoints() + Bottas.getPoints());
-        Ferrari.setPoints( Sainz.getPoints() + Leclerc.getPoints() );
-        McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());
-
-
-        //
-        ArrayList <Integer> Chauffeurs= new ArrayList();
-        ArrayList <Integer> Constructeurs= new ArrayList();
-
-        //Liste points pilotes
-        Chauffeurs.add(SuperMax.getPoints());
-        Chauffeurs.add(Checo.getPoints());
-        Chauffeurs.add(Hamilton.getPoints());
-        Chauffeurs.add(Bottas.getPoints());
-        Chauffeurs.add(Sainz.getPoints());
-        Chauffeurs.add(Leclerc.getPoints());
-        Chauffeurs.add(Ricciardo.getPoints());
-        Chauffeurs.add(Lando.getPoints());
-
-        //Liste points constructeurs
-        Constructeurs.add(SuperMax.getPoints() + Checo.getPoints());
-        Constructeurs.add(Hamilton.getPoints() + Bottas.getPoints());
-        Constructeurs.add(Sainz.getPoints() + Leclerc.getPoints());
-        Constructeurs.add(Ricciardo.getPoints() + Lando.getPoints());
+        
 
     }
 
@@ -160,7 +134,7 @@ public class ChampionnatTest {
     }
 
     @Test
-    public void winChampionshipPiloteTest()
+    public void testWinChampionshipPilote()
     {
         //
         ArrayList <Integer> Chauffeurs= new ArrayList();
@@ -179,7 +153,7 @@ public class ChampionnatTest {
     }
 
     @Test
-    public void winChampionshipConstructeurTest() {
+    public void testWinChampionshipConstructeur() {
         ArrayList <Integer> Constructeurs= new ArrayList();
         Constructeurs.add(SuperMax.getPoints() + Checo.getPoints());
         Constructeurs.add(Hamilton.getPoints() + Bottas.getPoints());
@@ -191,7 +165,7 @@ public class ChampionnatTest {
     }
 
     @Test
-    public void equipeGetPointsTest() {
+    public void testEquipeGetPoints() {
         assertEquals(this.Mercedes.getPoints(), (this.Hamilton.getPoints() + this.Bottas.getPoints()));
     }
 
