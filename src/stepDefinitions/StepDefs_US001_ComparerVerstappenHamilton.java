@@ -14,28 +14,29 @@ import java.util.ArrayList;
 public class StepDefs_US001_ComparerVerstappenHamilton {
 
     private Equipe equipe;
+    private Pilote pilote1;
+    private Pilote pilote2;
 
     @Given("l'equipe dont les pilotes sont")
     public void pilotes(){
         this.equipe = new Equipe();
+        this.pilote1 = new Pilote();
+        this.pilote2 = new Pilote();
+        ArrayList <Pilote> pilotes = new ArrayList<Pilote>();
+        pilotes.add(pilote1);
+        pilotes.add(pilote2);
+        this.equipe.setPilotes(pilotes);
+        this.pilote1.setEquipe(this.equipe);
+        this.pilote2.setEquipe(this.equipe);
     }
 
-    @Given("le pilote {Pilote} qui a {int}")
+    @Given("le pilote {} qui a {int}")
     public void pilote1Equipe(Pilote pilote1, int points1){
         ArrayList <Pilote> pilotes = new ArrayList<Pilote>();
         pilotes.add(pilote1);
         this.equipe.setPilotes(pilotes);
         pilote1.setEquipe(this.equipe);
         pilote1.setPoints(points1);
-    }
-
-    @Given("le pilote {Pilote} qui a {int}")
-    public void pilote2Equipe(Pilote pilote2, int points2){
-        ArrayList <Pilote> pilotes = new ArrayList<Pilote>();
-        pilotes.add(pilote2);
-        this.equipe.setPilotes(pilotes);
-        pilote2.setEquipe(this.equipe);
-        pilote2.setPoints(points2);
     }
 
     @When("le Race Director calcule les points")

@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Tests fonctionnels avec features">
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="StepDef corrige mais fonctionne toujours pas">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ressources/features/US001_ComparerVerstappenHamilton.feature" beforeDir="false" afterPath="$PROJECT_DIR$/ressources/features/US001_ComparerVerstappenHamilton.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/testRunners/TestRunner_US001_ComparerVerstappenHamilton.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639578826232</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="StepDef corrige mais fonctionne toujours pas">
+      <created>1639580704592</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1639580704592</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,6 +161,7 @@
     <MESSAGE value="Tests" />
     <MESSAGE value="Tests fonctionnels" />
     <MESSAGE value="Tests fonctionnels avec features" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests fonctionnels avec features" />
+    <MESSAGE value="StepDef corrige mais fonctionne toujours pas" />
+    <option name="LAST_COMMIT_MESSAGE" value="StepDef corrige mais fonctionne toujours pas" />
   </component>
 </project>
