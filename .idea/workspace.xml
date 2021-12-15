@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Tests">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FormulaOne.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FormulaOne.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ChampionnatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChampionnatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ChampionnatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ChampionnatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Equipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pilote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Pilote.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639569262487</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tests">
+      <created>1639572839686</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639572839686</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -92,6 +99,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Tests" />
   </component>
 </project>

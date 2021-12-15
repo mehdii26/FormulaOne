@@ -1,3 +1,4 @@
+package main;
 
 public class Course {
     // variables d'instance - remplacez l'exemple qui suit par le vÃ´tre
@@ -82,7 +83,7 @@ public class Course {
 
 
     /**
-     * Constructeur d'objets de classe Course
+     * Constructeur d'objets de classe main.Course
      */
 
 

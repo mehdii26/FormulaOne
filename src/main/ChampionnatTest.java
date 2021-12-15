@@ -1,3 +1,5 @@
+package main;
+
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -24,7 +26,7 @@ public class ChampionnatTest {
     private Equipe McLaren;
     private Equipe Ferrari;
 
-    //Course
+    //main.Course
     private Course AbuDhabiGP;
 
 
@@ -104,7 +106,7 @@ public class ChampionnatTest {
         Ferrari.setPoints( Sainz.getPoints() + Leclerc.getPoints() );
         McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());
 
-        //Course
+        //main.Course
         AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo, Checo);
 
         //Points après la course
