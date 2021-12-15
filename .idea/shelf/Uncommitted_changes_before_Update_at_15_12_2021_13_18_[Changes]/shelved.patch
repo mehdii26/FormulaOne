@@ -1,0 +1,103 @@
+Index: src/ChampionnatTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import org.junit.jupiter.api.AfterEach;\r\nimport org.junit.jupiter.api.BeforeEach;\r\nimport org.junit.jupiter.api.Test;\r\n\r\nimport java.util.ArrayList;\r\n\r\nimport static org.junit.jupiter.api.Assertions.*;\r\n\r\npublic class ChampionnatTest {\r\n\r\n    //Pilotes\r\n    private Pilote SuperMax;\r\n    private Pilote Checo;\r\n    private Pilote Bottas;\r\n    private Pilote Hamilton;\r\n    private Pilote Sainz;\r\n    private Pilote Leclerc;\r\n    private Pilote Lando;\r\n    private Pilote Ricciardo;\r\n\r\n    //Equipes\r\n    private Equipe RedBull;\r\n    private Equipe Mercedes;\r\n    private Equipe McLaren;\r\n    private Equipe Ferrari;\r\n\r\n    //Course\r\n    private Course AbuDhabiGP;\r\n\r\n\r\n\r\n    /**\r\n     * Constructeur de la classe-test PiloteTest\r\n     */\r\n    public ChampionnatTest()\r\n    {\r\n    }\r\n\r\n\r\n    @BeforeEach\r\n    public void setUp() // throws java.lang.Exception\r\n    {\r\n        // Chauffeurs\r\n        SuperMax = new Pilote();\r\n        Hamilton = new Pilote();\r\n        Checo = new Pilote();\r\n        Bottas = new Pilote();\r\n        Sainz = new Pilote();\r\n        Leclerc = new Pilote();\r\n        Lando = new Pilote();\r\n        Ricciardo = new Pilote();\r\n\r\n        //Equipes\r\n        Mercedes = new Equipe();\r\n        RedBull = new Equipe();\r\n        Ferrari = new Equipe();\r\n        McLaren = new Equipe();\r\n\r\n\r\n\r\n        //Points chauffeurs\r\n        SuperMax.setPoints(369);\r\n        Hamilton.setPoints(369);\r\n        Checo.setPoints(190);\r\n        Bottas.setPoints(218);\r\n        Lando.setPoints(154);\r\n        Sainz.setPoints(149);\r\n        Leclerc.setPoints(158);\r\n        Ricciardo.setPoints(115);\r\n\r\n        //Equipes chauffeurs\r\n        SuperMax.setEquipe(RedBull);\r\n        Checo.setEquipe(RedBull);\r\n        Hamilton.setEquipe(Mercedes);\r\n        Bottas.setEquipe(Mercedes);\r\n        Sainz.setEquipe(Ferrari);\r\n        Leclerc.setEquipe(Ferrari);\r\n        Lando.setEquipe(McLaren);\r\n        Ricciardo.setEquipe(McLaren);\r\n\r\n        //Initialisation équipes\r\n        ArrayList <Pilote> rbDrivers= new ArrayList();\r\n        rbDrivers.add(Checo);\r\n        rbDrivers.add(SuperMax);\r\n        RedBull.setPilotes(rbDrivers);\r\n\r\n        ArrayList <Pilote> merDrivers= new ArrayList();\r\n        merDrivers.add(Hamilton);\r\n        merDrivers.add(Bottas);\r\n        Mercedes.setPilotes(merDrivers);\r\n\r\n        ArrayList <Pilote> ferrariDrivers= new ArrayList();\r\n        ferrariDrivers.add(Leclerc);\r\n        ferrariDrivers.add(Sainz);\r\n        Ferrari.setPilotes(ferrariDrivers);\r\n\r\n        ArrayList <Pilote> mclarenDrivers= new ArrayList();\r\n        mclarenDrivers.add(Lando);\r\n        mclarenDrivers.add(Ricciardo);\r\n        McLaren.setPilotes(mclarenDrivers);\r\n\r\n        RedBull.setPoints(SuperMax.getPoints() + Checo.getPoints());\r\n        Mercedes.setPoints(Hamilton.getPoints() + Bottas.getPoints());\r\n        Ferrari.setPoints( Sainz.getPoints() + Leclerc.getPoints() );\r\n        McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());\r\n\r\n        //Course\r\n        AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo,Checo);\r\n\r\n        //Points après la course\r\n        AbuDhabiGP.Classement(SuperMax);\r\n        AbuDhabiGP.Classement(Bottas);\r\n        AbuDhabiGP.Classement(Hamilton);\r\n        AbuDhabiGP.Classement(Checo);\r\n        AbuDhabiGP.Classement(Leclerc);\r\n        AbuDhabiGP.Classement(Lando);\r\n        AbuDhabiGP.Classement(Sainz);\r\n        AbuDhabiGP.Classement(Ricciardo);\r\n\r\n\r\n        RedBull.setPoints(SuperMax.getPoints() + Checo.getPoints());\r\n        Mercedes.setPoints(Hamilton.getPoints() + Bottas.getPoints());\r\n        Ferrari.setPoints( Sainz.getPoints() + Leclerc.getPoints() );\r\n        McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());\r\n\r\n\r\n        //\r\n        ArrayList <Integer> Chauffeurs= new ArrayList();\r\n        ArrayList <Integer> Constructeurs= new ArrayList();\r\n\r\n        //Liste points pilotes\r\n        Chauffeurs.add(SuperMax.getPoints());\r\n        Chauffeurs.add(Checo.getPoints());\r\n        Chauffeurs.add(Hamilton.getPoints());\r\n        Chauffeurs.add(Bottas.getPoints());\r\n        Chauffeurs.add(Sainz.getPoints());\r\n        Chauffeurs.add(Leclerc.getPoints());\r\n        Chauffeurs.add(Ricciardo.getPoints());\r\n        Chauffeurs.add(Lando.getPoints());\r\n\r\n        //Liste points constructeurs\r\n        Constructeurs.add(SuperMax.getPoints() + Checo.getPoints());\r\n        Constructeurs.add(Hamilton.getPoints() + Bottas.getPoints());\r\n        Constructeurs.add(Sainz.getPoints() + Leclerc.getPoints());\r\n        Constructeurs.add(Ricciardo.getPoints() + Lando.getPoints());\r\n\r\n    }\r\n\r\n\r\n    @AfterEach\r\n    public void tearDown() // throws java.lang.Exception\r\n    {\r\n        //LibÃ©rez ici les ressources engagÃ©es par setUp()\r\n    }\r\n\r\n    @Test\r\n    public void beatTest()\r\n    {\r\n        assertEquals(true, SuperMax.beat(Hamilton));\r\n    }\r\n\r\n    @Test\r\n    public void winChampionshipPiloteTest()\r\n    {\r\n        //\r\n        ArrayList <Integer> Chauffeurs= new ArrayList();\r\n\r\n        //Liste points pilotes\r\n        Chauffeurs.add(SuperMax.getPoints());\r\n        Chauffeurs.add(Checo.getPoints());\r\n        Chauffeurs.add(Hamilton.getPoints());\r\n        Chauffeurs.add(Bottas.getPoints());\r\n        Chauffeurs.add(Sainz.getPoints());\r\n        Chauffeurs.add(Leclerc.getPoints());\r\n        Chauffeurs.add(Ricciardo.getPoints());\r\n        Chauffeurs.add(Lando.getPoints());\r\n\r\n        assertEquals(true, SuperMax.winChampionshipPilote(Chauffeurs));\r\n    }\r\n\r\n    @Test\r\n    public void winChampionshipConstructeurTest() {\r\n        ArrayList <Integer> Constructeurs= new ArrayList();\r\n        Constructeurs.add(SuperMax.getPoints() + Checo.getPoints());\r\n        Constructeurs.add(Hamilton.getPoints() + Bottas.getPoints());\r\n        Constructeurs.add(Sainz.getPoints() + Leclerc.getPoints());\r\n        Constructeurs.add(Ricciardo.getPoints() + Lando.getPoints());\r\n\r\n        assertEquals(true, Mercedes.winChampionshipConstructeur(Constructeurs));\r\n\r\n    }\r\n\r\n    @Test\r\n    public void equipeGetPointsTest() {\r\n        assertEquals(this.Mercedes.getPoints(), (this.Hamilton.getPoints() + this.Bottas.getPoints()));\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/ChampionnatTest.java b/src/ChampionnatTest.java
+--- a/src/ChampionnatTest.java	(revision 751c9ab976943dccdf721baa2b00422454f6fd83)
++++ b/src/ChampionnatTest.java	(date 1639570358414)
+@@ -105,7 +105,7 @@
+         McLaren.setPoints(Lando.getPoints()+Ricciardo.getPoints());
+ 
+         //Course
+-        AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo,Checo);
++        AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo, Checo);
+ 
+         //Points après la course
+         AbuDhabiGP.Classement(SuperMax);
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"dd594419-c98a-48ce-a931-76e7ae509ec1\" name=\"Changes\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"22JvKkiS4BiACxF95pcsfjJy3bd\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"Downloaded.Files.Path.Enabled\" value=\"false\" />\r\n    <property name=\"Repository.Attach.Annotations\" value=\"false\" />\r\n    <property name=\"Repository.Attach.JavaDocs\" value=\"false\" />\r\n    <property name=\"Repository.Attach.Sources\" value=\"false\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\r\n    <property name=\"project.structure.last.edited\" value=\"Libraries\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"org.jetbrains.plugins.github.ui.GithubSettingsConfigurable\" />\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"dd594419-c98a-48ce-a931-76e7ae509ec1\" name=\"Changes\" comment=\"\" />\r\n      <created>1639568452639</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1639568452639</updated>\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State>\r\n              <option name=\"CUSTOM_BOOLEAN_PROPERTIES\">\r\n                <map>\r\n                  <entry key=\"Show.Git.Branches\" value=\"false\" />\r\n                </map>\r\n              </option>\r\n            </State>\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 751c9ab976943dccdf721baa2b00422454f6fd83)
++++ b/.idea/workspace.xml	(date 1639570713756)
+@@ -1,12 +1,19 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="" />
++    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/FormulaOne.iml" beforeDir="false" afterPath="$PROJECT_DIR$/FormulaOne.iml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/ChampionnatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChampionnatTest.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+     <option name="LAST_RESOLUTION" value="IGNORE" />
+   </component>
++  <component name="CodeStyleSettingsInfer">
++    <option name="done" value="true" />
++  </component>
+   <component name="FileTemplateManagerImpl">
+     <option name="RECENT_TEMPLATES">
+       <list>
+@@ -19,6 +26,9 @@
+   </component>
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
++  </component>
++  <component name="ProjectCodeStyleSettingsMigration">
++    <option name="version" value="2" />
+   </component>
+   <component name="ProjectId" id="22JvKkiS4BiACxF95pcsfjJy3bd" />
+   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+Index: FormulaOne.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n    <orderEntry type=\"library\" name=\"groovy-4.0.0-beta-1\" level=\"project\" />\r\n    <orderEntry type=\"library\" name=\"io.cucumber.java\" level=\"project\" />\r\n    <orderEntry type=\"module-library\">\r\n      <library name=\"JUnit5.7.0\">\r\n        <CLASSES>\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar!/\" />\r\n          <root url=\"jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar!/\" />\r\n        </CLASSES>\r\n        <JAVADOC />\r\n        <SOURCES />\r\n      </library>\r\n    </orderEntry>\r\n  </component>\r\n</module>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/FormulaOne.iml b/FormulaOne.iml
+--- a/FormulaOne.iml	(revision 751c9ab976943dccdf721baa2b00422454f6fd83)
++++ b/FormulaOne.iml	(date 1639570359740)
+@@ -25,5 +25,31 @@
+         <SOURCES />
+       </library>
+     </orderEntry>
++    <orderEntry type="module-library">
++      <library name="JUnit4">
++        <CLASSES>
++          <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.13.1/junit-4.13.1.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
++    <orderEntry type="module-library">
++      <library name="JUnit5.7.0">
++        <CLASSES>
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar!/" />
++          <root url="jar://$MAVEN_REPOSITORY$/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
+   </component>
+ </module>
+\ No newline at end of file
