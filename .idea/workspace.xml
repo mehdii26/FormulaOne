@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Added atome package">
-      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/strategieCourse/Pneu.java" afterDir="false" />
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="essais package added&#10;feature added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/Equipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/Equipe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Attribuer les points aux 1er et 2eme de la course">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Comparer des pneus">
     <configuration name="Scenario: Attribuer les points aux 1er et 2eme de la course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US004_AttribuerPointsCourse.feature" />
@@ -98,6 +99,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Comparer des pneus" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US011_ChoisirPneu.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FormulaOne" />
+      <option name="NAME_FILTER" value="^Comparer des pneus$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Comparer des pneus$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Comparer des pneus" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Verstappen est champion" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US001_ComparerVerstappenHamilton.feature" />
@@ -120,6 +141,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Comparer des pneus" />
         <item itemvalue="Cucumber Java.Scenario: Attribuer les points aux 1er et 2eme de la course" />
         <item itemvalue="Cucumber Java.Scenario: Calculer les points d'une equipe" />
         <item itemvalue="Cucumber Java.Scenario: Verstappen est champion" />
@@ -212,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639666709666</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="essais package added&#10;feature added">
+      <created>1639668409669</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1639668409669</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -243,7 +272,8 @@
     <MESSAGE value="USOO4 feature created" />
     <MESSAGE value="USOO4 stepDef created" />
     <MESSAGE value="Added atome package" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added atome package" />
+    <MESSAGE value="essais package added&#10;feature added" />
+    <option name="LAST_COMMIT_MESSAGE" value="essais package added&#10;feature added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
