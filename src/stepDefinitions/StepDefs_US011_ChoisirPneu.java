@@ -47,6 +47,7 @@ public class StepDefs_US011_ChoisirPneu {
     public void verifierPneuChoisi(String pneuType){
         assertEquals(pneuType, this.essai1.getPneu().getNom());
     }
+
 }
 
 

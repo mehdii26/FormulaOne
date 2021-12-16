@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="essais package added&#10;feature added">
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="feature and stepDef modified">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/Equipe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/Equipe.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639668409669</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feature and stepDef modified">
+      <created>1639669280577</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1639669280577</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,7 +278,8 @@
     <MESSAGE value="USOO4 stepDef created" />
     <MESSAGE value="Added atome package" />
     <MESSAGE value="essais package added&#10;feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="essais package added&#10;feature added" />
+    <MESSAGE value="feature and stepDef modified" />
+    <option name="LAST_COMMIT_MESSAGE" value="feature and stepDef modified" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
