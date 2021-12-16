@@ -12,6 +12,23 @@ public class Course {
     private Pilote eighth;
     private int newPoints;
 
+    public Course(){
+
+    }
+
+    public Course(Pilote winner, Pilote second, Pilote third, Pilote fourth, Pilote fifth, Pilote sixth, Pilote seventh,
+                  Pilote eighth) {
+        super();
+        this.winner = winner;
+        this.second = second;
+        this.third = third;
+        this.fourth = fourth;
+        this.fifth = fifth;
+        this.sixth = sixth;
+        this.seventh = seventh;
+        this.eighth = eighth;
+    }
+
     public Pilote getSecond() {
         return second;
     }
@@ -81,37 +98,17 @@ public class Course {
         this.eighth = eighth;
     }
 
-
-    /**
-     * Constructeur d'objets de classe main.Course
-     */
-
-
-
     public Pilote getWinner(){
         return this.winner;
     }
 
-    public Course(Pilote winner, Pilote second, Pilote third, Pilote fourth, Pilote fifth, Pilote sixth, Pilote seventh,
-                  Pilote eighth) {
-        super();
-        this.winner = winner;
-        this.second = second;
-        this.third = third;
-        this.fourth = fourth;
-        this.fifth = fifth;
-        this.sixth = sixth;
-        this.seventh = seventh;
-        this.eighth = eighth;
-    }
 
 
     public void setWinner(Pilote pilote){
         this.winner = pilote;
     }
 
-
-    public void Classement(Pilote pilote){
+    public void classement(Pilote pilote){
         int newPoints = 0;
 
         if (pilote == winner) newPoints = 25;

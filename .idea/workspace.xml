@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="USOO1 feature correction des expressions">
-      <change afterPath="$PROJECT_DIR$/ressources/features/US001_CalculerPointsEquipe.feature" afterDir="false" />
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="USOO4 feature created">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ressources/features/US001_ComparerVerstappenHamilton.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US001_CalculerPointsEquipe.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/stepDefinitions/StepDefs_US001_ComparerVerstappenHamilton.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ChampionnatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ChampionnatTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Course.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,27 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Calculer les points d'une equipe">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Attribuer les points aux 1er et 2eme de la course">
+    <configuration name="Scenario: Attribuer les points aux 1er et 2eme de la course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US004_AttribuerPointsCourse.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FormulaOne" />
+      <option name="NAME_FILTER" value="^Attribuer les points aux 1er et 2eme de la course$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Attribuer les points aux 1er et 2eme de la course$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Attribuer les points aux 1er et 2eme de la course" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Calculer les points d'une equipe" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US001_ComparerVerstappenHamilton.feature" />
@@ -101,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Attribuer les points aux 1er et 2eme de la course" />
         <item itemvalue="Cucumber Java.Scenario: Calculer les points d'une equipe" />
         <item itemvalue="Cucumber Java.Scenario: Verstappen est champion" />
       </list>
@@ -171,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639581497096</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="USOO4 feature created">
+      <created>1639658600080</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1639658600080</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,6 +227,17 @@
     <MESSAGE value="StepDef corrige mais fonctionne toujours pas" />
     <MESSAGE value="USOO1 BDD success" />
     <MESSAGE value="USOO1 feature correction des expressions" />
-    <option name="LAST_COMMIT_MESSAGE" value="USOO1 feature correction des expressions" />
+    <MESSAGE value="USOO4 feature created" />
+    <option name="LAST_COMMIT_MESSAGE" value="USOO4 feature created" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

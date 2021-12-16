@@ -110,14 +110,14 @@ public class ChampionnatTest {
         AbuDhabiGP = new Course(SuperMax, Hamilton, Sainz, Bottas, Lando, Leclerc, Ricciardo, Checo);
 
         //Points après la course
-        AbuDhabiGP.Classement(SuperMax);
-        AbuDhabiGP.Classement(Bottas);
-        AbuDhabiGP.Classement(Hamilton);
-        AbuDhabiGP.Classement(Checo);
-        AbuDhabiGP.Classement(Leclerc);
-        AbuDhabiGP.Classement(Lando);
-        AbuDhabiGP.Classement(Sainz);
-        AbuDhabiGP.Classement(Ricciardo);
+        AbuDhabiGP.classement(SuperMax);
+        AbuDhabiGP.classement(Bottas);
+        AbuDhabiGP.classement(Hamilton);
+        AbuDhabiGP.classement(Checo);
+        AbuDhabiGP.classement(Leclerc);
+        AbuDhabiGP.classement(Lando);
+        AbuDhabiGP.classement(Sainz);
+        AbuDhabiGP.classement(Ricciardo);
     }
 
 
