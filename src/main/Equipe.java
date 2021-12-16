@@ -37,7 +37,7 @@ public class Equipe {
     }
 
 
-    public boolean winChampionshipConstructeur(List<Integer> pointsConstructeurs) {
+    public boolean winChampionshipEquipe(List<Integer> pointsConstructeurs) {
         if(this.points == Collections.max(pointsConstructeurs)) this.isChampion = true;
         else this.isChampion = false;
 

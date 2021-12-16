@@ -168,10 +168,10 @@ public class ChampionnatTest {
         Constructeurs.add(Sainz.getPoints() + Leclerc.getPoints());
         Constructeurs.add(Ricciardo.getPoints() + Lando.getPoints());
 
-        assertEquals(true, Mercedes.winChampionshipConstructeur(Constructeurs));
-        assertEquals(false, RedBull.winChampionshipConstructeur(Constructeurs));
-        assertEquals(false, McLaren.winChampionshipConstructeur(Constructeurs));
-        assertEquals(false, Ferrari.winChampionshipConstructeur(Constructeurs));
+        assertEquals(true, Mercedes.winChampionshipEquipe(Constructeurs));
+        assertEquals(false, RedBull.winChampionshipEquipe(Constructeurs));
+        assertEquals(false, McLaren.winChampionshipEquipe(Constructeurs));
+        assertEquals(false, Ferrari.winChampionshipEquipe(Constructeurs));
 
     }
 
