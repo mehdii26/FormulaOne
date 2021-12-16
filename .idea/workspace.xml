@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="USOO4 stepDef created">
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Added atome package">
+      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/strategieCourse/Pneu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/ChampionnatTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/main/Course.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/main/Course.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ChampionnatTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ChampionnatTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Equipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Equipe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639661604077</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added atome package">
+      <created>1639666709666</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639666709666</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,7 +242,8 @@
     <MESSAGE value="USOO1 feature correction des expressions" />
     <MESSAGE value="USOO4 feature created" />
     <MESSAGE value="USOO4 stepDef created" />
-    <option name="LAST_COMMIT_MESSAGE" value="USOO4 stepDef created" />
+    <MESSAGE value="Added atome package" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added atome package" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
