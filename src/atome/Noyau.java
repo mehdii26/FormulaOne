@@ -1,24 +1,38 @@
 package atome;
-
-public class Noyau {
+public class Noyau
+{
     private double masseNoyau;
+    private Atome a;
 
     public Noyau()
     {
         this.masseNoyau = 17 * Math.pow(10, -28);
+        this.a = new Atome();
     }
 
-    public double explosionNoyau(Atome a, int varationElectrons)
+    public double explosionNoyau(int varationElectrons)
     {
-        return this.masseNoyau * a.chargeAtome(varationElectrons);
+        return this.masseNoyau * this.a.chargeAtome(varationElectrons);
     }
 
     // Setters & getters
-    public void setMasseNoyau(double masseNoyau){
+    public void setMasseNoyau(double masseNoyau)
+    {
         this.masseNoyau = masseNoyau;
     }
 
-    public double getMasseNoyau(){
+    public double getMasseNoyau()
+    {
         return this.masseNoyau;
     }
+
+    public void setA(Atome a)
+    {
+        this.a = a;
+    }
+
+    public Atome getA(){
+        return this.a;
+    }
+
 }
