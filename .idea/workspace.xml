@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="StepDef US004">
-      <change afterPath="$PROJECT_DIR$/ressources/features/us_100_inventaire.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ressources/features/us_101_nomenclature.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ressources/features/us_102_tri.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/Stepdefs_us_100_inventaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/Stepdefs_us_101_nomenclature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/Stepdefs_us_102_tri.java" afterDir="false" />
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Nicolas changes on atome package, plus features and stepsdefs for atome">
+      <change afterPath="$PROJECT_DIR$/src/atome/ComposantChimique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atome/MoleculeGeneModife.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/atome/Atome.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/atome/Atome.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/atome/Molecule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/atome/Molecule.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/atome/Noyau.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/atome/Noyau.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atome/Atome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/Atome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atome/Molecule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/Molecule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atome/Noyau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/Noyau.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -305,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641900322924</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Nicolas changes on atome package, plus features and stepsdefs for atome">
+      <created>1641920044146</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1641920044146</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +339,8 @@
     <MESSAGE value="feature and stepDef modified again" />
     <MESSAGE value="feature US011 and stepDef USO11" />
     <MESSAGE value="StepDef US004" />
-    <option name="LAST_COMMIT_MESSAGE" value="StepDef US004" />
+    <MESSAGE value="Nicolas changes on atome package, plus features and stepsdefs for atome" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nicolas changes on atome package, plus features and stepsdefs for atome" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
