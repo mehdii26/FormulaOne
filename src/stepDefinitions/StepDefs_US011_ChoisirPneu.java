@@ -38,15 +38,15 @@ public class StepDefs_US011_ChoisirPneu {
             this.essai2.setPneu(this.pneu2);
         };
 
-        @When("^(\\d+) de essai1 est inferieur a (\\d+) de essai2$")
-        public void comparerEssai1EtEssai2(Integer arg0, Integer arg1)  {
-            this.essai1.setDuree(arg0);
-            this.essai2.setDuree(arg1);
-        };
+            @When("^(\\d+) de essai1 est inferieur a (\\d+) de essai2$")
+            public void comparerEssai1EtEssai2(Integer arg0, Integer arg1)  {
+                this.essai1.setDuree(arg0);
+                this.essai2.setDuree(arg1);
+            };
 
-        @Then("le {string} est selectionne automatiquement")
-        public void choisirStrategie(String arg0) {
-            assertEquals(arg0, this.essai1.getPneu().getNom());
-        };
+            @Then("le {string} est selectionne automatiquement")
+            public void choisirStrategie(String arg0) {
+                assertEquals(arg0, this.essai1.getPneu().getNom());
+            };
 
 }

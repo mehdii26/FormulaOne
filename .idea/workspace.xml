@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="Nicolas changes on atome package, plus features and stepsdefs for atome">
-      <change afterPath="$PROJECT_DIR$/src/atome/ComposantChimique.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atome/MoleculeGeneModife.java" afterDir="false" />
+    <list default="true" id="dd594419-c98a-48ce-a931-76e7ae509ec1" name="Changes" comment="adding a design pattertn composite (MoleculeGeneModifie and ComposantChimique)">
+      <change afterPath="$PROJECT_DIR$/ressources/features/US012_CreerComposantChimique.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US012_CreerComposantChimique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FormulaOne/atome/Molecule.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FormulaOne/atome/Molecule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atome/ComposantChimique.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/ComposantChimique.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/atome/Molecule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/Molecule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atome/MoleculeGeneModife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/atome/MoleculeGeneModife.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stepDefinitions/StepDefs_US011_ChoisirPneu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,27 +68,7 @@
       <recent name="C:\Users\pc\Desktop\Dauphine\Agile\FormulaOne\ressources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Tri des atomes">
-    <configuration name="Scenario: Attribuer les points aux 1er et 2eme de la course" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US004_AttribuerPointsCourse.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="FormulaOne" />
-      <option name="NAME_FILTER" value="^Attribuer les points aux 1er et 2eme de la course$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Attribuer les points aux 1er et 2eme de la course$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Attribuer les points aux 1er et 2eme de la course" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cucumber Java.Scenario: Verifier que le nom du composant correspond a la concatenation des noms des molecules">
     <configuration name="Scenario: Changer la façon d'écrire le nom des molécules" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/us_101_nomenclature.feature" />
@@ -145,6 +129,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: Verifier que le nom du composant correspond a la concatenation des noms des molecules" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/US012_CreerComposantChimique.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="FormulaOne" />
+      <option name="NAME_FILTER" value="^Verifier que le nom du composant correspond a la concatenation des noms des molecules$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verifier que le nom du composant correspond a la concatenation des noms des molecules$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Verifier que le nom du composant correspond a la concatenation des noms des molecules" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Vérifier le nombre d'éléctrons dans une molécule d'hydrogène et de lithium" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/ressources/features/us_100_inventaire.feature" />
@@ -167,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Verifier que le nom du composant correspond a la concatenation des noms des molecules" />
+        <item itemvalue="Cucumber Java.Scenario: Comparer des pneus" />
         <item itemvalue="Cucumber Java.Scenario: Tri des atomes" />
         <item itemvalue="Cucumber Java.Scenario: Changer la façon d'écrire le nom des molécules" />
         <item itemvalue="Cucumber Java.Scenario: Vérifier le nombre d'éléctrons dans une molécule d'hydrogène et de lithium" />
-        <item itemvalue="Cucumber Java.Scenario: Comparer des pneus" />
-        <item itemvalue="Cucumber Java.Scenario: Attribuer les points aux 1er et 2eme de la course" />
       </list>
     </recent_temporary>
   </component>
@@ -303,7 +307,21 @@
       <option name="project" value="LOCAL" />
       <updated>1641920044146</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="adding a design pattertn composite (MoleculeGeneModifie and ComposantChimique)">
+      <created>1641990467593</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1641990467593</updated>
+    </task>
+    <task id="LOCAL-00019" summary="adding a design pattertn composite (MoleculeGeneModifie and ComposantChimique)">
+      <created>1641990486559</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1641990486559</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -340,7 +358,8 @@
     <MESSAGE value="feature US011 and stepDef USO11" />
     <MESSAGE value="StepDef US004" />
     <MESSAGE value="Nicolas changes on atome package, plus features and stepsdefs for atome" />
-    <option name="LAST_COMMIT_MESSAGE" value="Nicolas changes on atome package, plus features and stepsdefs for atome" />
+    <MESSAGE value="adding a design pattertn composite (MoleculeGeneModifie and ComposantChimique)" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding a design pattertn composite (MoleculeGeneModifie and ComposantChimique)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

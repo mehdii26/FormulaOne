@@ -6,6 +6,7 @@ public class ComposantChimique extends  Molecule{
     private ArrayList <Molecule> molecules;
 
     public ComposantChimique() {
+        this.molecules = new ArrayList<>();
     }
 
     public ArrayList<Molecule> getMolecules() {
@@ -16,7 +17,7 @@ public class ComposantChimique extends  Molecule{
         this.molecules = molecules;
     }
 
-    public void creerMolecule (Molecule molecule){
+    public void ajouterMolecule (Molecule molecule){
         if (this.molecules.size() == 0)
         {
             this.setNomMolecule(molecule.getNomMolecule());

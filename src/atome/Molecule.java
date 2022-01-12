@@ -7,6 +7,8 @@ public class Molecule {
     private ArrayList<String> liaisonAtomique;
     private String nomMolecule;
 
+
+
     public Molecule()
     {
         this.listAtomes = new ArrayList<Atome>();

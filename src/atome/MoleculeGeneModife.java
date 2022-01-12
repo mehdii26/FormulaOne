@@ -3,9 +3,9 @@ package atome;
 public class MoleculeGeneModife extends Molecule{
 
     private Atome atomeRef;
-    private Molecule molecule;
 
     public MoleculeGeneModife() {
+        this.atomeRef = new Atome();
     }
 
     public Atome getAtomeRef() {
@@ -16,18 +16,11 @@ public class MoleculeGeneModife extends Molecule{
         this.atomeRef = atomeRef;
     }
 
-    public Molecule getMolecule() {
-        return molecule;
-    }
-
-    public void setMolecule(Molecule molecule) {
-        this.molecule = molecule;
-    }
 
     public void creerMgm(Atome atome, int nbAtomes) {
         this.setAtomeRef(atome);
         for (int i=0; i<nbAtomes; i++){
-            this.getMolecule().ajouterAtome(atome);
+            this.ajouterAtome(atome);
         }
     }
 }
