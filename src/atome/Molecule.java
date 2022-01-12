@@ -14,6 +14,14 @@ public class Molecule {
         this.nomMolecule = "";
     }
 
+    public ArrayList<String> getLiaisonAtomique() {
+        return liaisonAtomique;
+    }
+
+    public void setLiaisonAtomique(ArrayList<String> liaisonAtomique) {
+        this.liaisonAtomique = liaisonAtomique;
+    }
+
     public void ajouterAtome(Atome a)
     {
         if (this.listAtomes.size() == 0)
